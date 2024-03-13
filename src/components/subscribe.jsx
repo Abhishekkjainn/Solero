@@ -1,7 +1,7 @@
 function SubscribetoEmail() {
   return (
     <div className="w-full h-full flex justify-center items-center">
-      <div className="h-48 bg-slate-900 w-96 rounded-[30px] flex justify-around items-center flex-col">
+      <div className="h-48 mb-16 bg-slate-900 w-96 rounded-[30px] flex justify-around items-center flex-col">
         <div className="pt-6 pl-6 font-semibold text-white">
           Subscribe to Newsletter
         </div>
