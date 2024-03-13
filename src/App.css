@@ -1,0 +1,55 @@
+.header {
+  z-index: 10;
+}
+.scaling-image {
+  animation: scaleAnimation 5s infinite alternate; /* 5 seconds animation duration */
+}
+.mainbody{
+  font-family: 'Poppins';
+  background-color: rgba(255, 255, 255, 0.352);
+
+}
+.categoriesdiv {
+  flex-shrink: 0; /* Prevent items from shrinking */
+  margin-right: 10px; /* Add spacing between items */
+}
+
+/* Ensure horizontal scrolling */
+.slider-container {
+  overflow-x: auto;
+  white-space: nowrap; /* Prevent items from wrapping */
+}
+
+/* styles.css */
+
+/* Set the width and color of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #828282; /* Use your desired color */
+  border-radius: 40px;
+}
+
+/* Set the width and color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #161616; /* Use your desired color */
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.367);
+}
+
+/* Set the width and color of the scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px; /* Set the width of the scrollbar */
+  /* background-color: rgb(20, 20, 20); */
+}
+
+
+
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2); /* 10% scale up */
+  }
+}
