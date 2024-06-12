@@ -78,7 +78,7 @@ body{
 .page1{
   height: 100vh;
   width: 100%;
-  background-image: url('carousel1img1.jpg');
+  background-image: url('/carousel1img1.jpg');
   background-position: center;
   background-size: cover;
 }
