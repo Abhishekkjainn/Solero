@@ -13,6 +13,24 @@ body{
   color: black;
 }
 
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: grey;
+  width: 3px;
+  border-radius: 40px;
+}
+.horizontalscrollcard::-webkit-scrollbar {
+  height: 5px; /* Height for horizontal scrollbar */
+}
+
+.horizontalscrollcard::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 40px;
+  height: 3px; /* Height for the scrollbar thumb */
+}
+
 /*HEADER*/
 
 .Header{
@@ -300,6 +318,7 @@ body{
   position: relative; /* Ensure position context for absolute positioning */
 }
 
+
 .hover-content {
   position: absolute;
   top: 0;
@@ -356,10 +375,116 @@ body{
   font-weight: 600;
   cursor: pointer;
 }
+.linepg4{
+  width: 400px;
+  height: 1.5px;
+  background-color: rgba(0, 0, 0, 0.564);
+  margin-top: 20px;
+}
 
 
 
 /*Page3*/
+
+/*Page 4*/
+/* Page 4 */
+.page4 {
+  height: auto;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contentpage4 {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+}
+.horizontalscrollcard {
+  display: flex;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  overflow-y: hidden; /* Hides vertical scrolling */
+  width: 75%;
+  margin-top: 50px;
+  padding: 20px; /* Optional: padding for better aesthetics */
+  scroll-snap-type: x mandatory; /* Optional: for snap scrolling */
+}
+.trustcard {
+  flex: 0 0 auto; /* Prevents flex items from shrinking */
+  width: 75%; /* Adjust width as necessary */
+  height: 70vh;
+  border-radius: 40px;
+  background-color: black;
+  margin-right: 40px;
+  scroll-snap-align: start; /* Optional: for snap scrolling */
+  position: relative; /* Needed to position the overlay */
+  overflow: hidden; /* To clip the overlay */
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.trustcard1, .trustcard2, .trustcard3 {
+  background-position: center;
+  background-size: cover;
+}
+.trustcard1 {
+  background-image: url('/eleganttilescard.jpg');
+}
+.trustcard2 {
+  background-image: url('/valuestilecard.jpg');
+}
+.trustcard3 {
+  background-image: url('/rdtilecard.jpg');
+}
+.trustcard:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, black, transparent);
+  border-radius: 40px;
+  z-index: 1;
+}
+.trustcard .content-container {
+  z-index: 2; /* Ensure content is above the overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.contentpg4 {
+  position: relative;
+  z-index: 10;
+  font-family: 'Bebas Neue';
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: 100;
+}
+.heading {
+  position: relative;
+  z-index: 10;
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/*Page 4*/
 
 
 
@@ -658,6 +783,110 @@ body{
     color: black;
     font-weight: 600;
     letter-spacing: 2px;
+  }
+  .linepg4{
+    width: 150px;
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 0.564);
+    margin-top: 20px;
+  }
+  .page4 {
+    height: auto;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contentpage4 {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+  }
+  .horizontalscrollcard {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical scrolling */
+    width: 80%;
+    margin-top: 50px;
+    padding: 20px; /* Optional: padding for better aesthetics */
+    scroll-snap-type: x mandatory; /* Optional: for snap scrolling */
+  }
+  .trustcard {
+    flex: 0 0 auto; /* Prevents flex items from shrinking */
+    width: 100%; /* Adjust width as necessary */
+    height: 70vh;
+    border-radius: 40px;
+    background-color: black;
+    margin-right: 20px;
+    scroll-snap-align: start; /* Optional: for snap scrolling */
+    position: relative; /* Needed to position the overlay */
+    overflow: hidden; /* To clip the overlay */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .trustcard1, .trustcard2, .trustcard3 {
+    background-position: center;
+    background-size: cover;
+  }
+  .trustcard1 {
+    background-image: url('/eleganttilescard.jpg');
+  }
+  .trustcard2 {
+    background-image: url('/valuestilecard.jpg');
+  }
+  .trustcard3 {
+    background-image: url('/rdtilecard.jpg');
+  }
+  .trustcard:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, black, transparent);
+    border-radius: 40px;
+    z-index: 1;
+  }
+  .trustcard .content-container {
+    z-index: 2; /* Ensure content is above the overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .contentpg4 {
+    position: relative;
+    z-index: 10;
+    font-family: 'Bebas Neue';
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: 100;
+  }
+  .heading {
+    position: relative;
+    z-index: 10;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .page2head{
+    font-size: 30px;
   }
 }
 /*Phone Size*/

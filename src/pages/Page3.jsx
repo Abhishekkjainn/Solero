@@ -51,6 +51,7 @@ export default function Page3() {
         </div>
       </div>
       <div className="exploremorebutton">Explore More</div>
+      <div className="linepg4"></div>
     </div>
   );
 }
