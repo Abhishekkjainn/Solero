@@ -220,7 +220,7 @@ body{
 }
 .contentpage2{
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   width: 70%;
   text-align: justify;
   color: black;
@@ -401,7 +401,7 @@ body{
 .contentpage4 {
   width: 80%;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: justify;
 }
 .horizontalscrollcard {
@@ -704,7 +704,7 @@ body{
   }
   .contentpage2{
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     width: 75%;
     text-align: justify;
     color: grey;
@@ -943,8 +943,8 @@ body{
     margin-bottom: 25px;
   }
   .contentpage2{
-    font-size: 10px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 600;
     width: 80%;
     text-align: justify;
     color: grey;
@@ -999,7 +999,7 @@ body{
   .contentpage4 {
     width: 80%;
     font-size: 18px;
-    font-weight: 200;
+    font-weight:500;
     text-align: justify;
   }
   .horizontalscrollcard {
