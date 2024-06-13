@@ -27,6 +27,7 @@ export default function Page6() {
           <div className="dimcontent">1600 x 4800 mm</div>
         </div>
       </div>
+      <div className="exploremoredimbutton">Explore Dimensions</div>
     </div>
   );
 }

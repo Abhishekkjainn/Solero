@@ -624,6 +624,62 @@ body{
   margin-bottom: 20px;
   margin-right: 20px;
 }
+.exploremoredimbutton{
+  width: 180px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border: 2px solid transparent;
+}
+.exploremoredimbutton:hover{
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  transition: 0.4s;
+}
+
+/*page7*/
+
+.page7{
+  height: auto;
+  padding-bottom: 0px;
+  padding-top: 40px;
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.contentpage7{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: start;align-items:center;
+  flex-direction: column;
+  margin-left: 0px;
+}
+.imagepage7{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;align-items: center;
+  transform: translateY(-180px);
+}
+.side3dimage{
+  width: 50%;
+}
+.textpg7{
+  font-size: 20px;
+  color: black;
+  text-align: justify;
+  width: 80%;
+  font-weight: 500;
+}
 
 
 /*Tablet Size*/
@@ -785,6 +841,44 @@ body{
     margin-left: 22px;
     margin-bottom: 20px;
     margin-right: 20px;
+  }
+  
+  .page7{
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 40px;
+
+  }
+  .contentpage7{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: start;align-items:center;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .imagepage7{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;align-items: center;
+    transform: translateY(-80px);
+  }
+  .side3dimage{
+    width: 50%;
+  }
+  .textpg7{
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    width: 80%;
+    font-weight: 500;
   }
   
 
@@ -1168,6 +1262,43 @@ body{
   }
   .pg6head{
     font-size: 20px;
+  }
+  .page7{
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 40px;
+
+  }
+  .contentpage7{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: start;align-items:center;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .imagepage7{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;align-items: center;
+    transform: translateY(-80px);
+  }
+  .side3dimage{
+    width: 80%;
+  }
+  .textpg7{
+    font-size: 16px;
+    color: black;
+    text-align: justify;
+    width: 85%;
+    font-weight: 500;
   }
   
 
