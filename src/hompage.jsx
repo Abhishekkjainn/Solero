@@ -8,6 +8,7 @@ import MediaPage from './pages/mediapage';
 import CareerPage from './pages/careerpage';
 import ContactsPage from './pages/contactspage';
 import { useState } from 'react';
+import AllPages from './Allpages';
 
 export default function Homepage() {
   return (
@@ -15,7 +16,7 @@ export default function Homepage() {
       <div className="Homepage">
         <Header />
         <Routes>
-          <Route path="/" element={<Page1 />} />
+          <Route path="/" element={<AllPages />} />
           <Route path="/company" element={<CompanyPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/downloads" element={<DownloadsPage />} />
@@ -88,7 +89,7 @@ export default function Homepage() {
             </label>
           </div>
           {isMenuVisible && (
-            <div className="menubox">
+            <div className={`menubox ${isMenuVisible ? 'open' : ''}`}>
               <div className="responsivelinks">
                 <Link
                   to="/company"
