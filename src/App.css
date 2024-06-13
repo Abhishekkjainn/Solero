@@ -168,7 +168,13 @@ body{
 /* background-image: url('/page2back1.jpg'); */
   background-position: center;
   background-size: cover;
-  background-color: white;
+  background-color: rgb(240, 240, 240);
+  display: flex;justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 /* .page2::after{
   content: '';
@@ -177,7 +183,36 @@ body{
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.701);
 } */
-
+.circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+}
+.page2head{
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contentpage2{
+  font-size: 16px;
+  font-weight: 400;
+  width: 60%;
+  text-align: justify;
+  color: grey;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+}
+.overline{
+  width: 60%;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 50px;
+}
 /*Page2*/
 
 
@@ -258,6 +293,15 @@ body{
     font-family: 'Bebas Neue';
     font-size: 20px;
     text-decoration: none;
+  }
+  .contentpage2{
+    font-size: 14px;
+    font-weight: 400;
+    width: 75%;
+    text-align: justify;
+    color: grey;
+    letter-spacing: 1.5px;
+    line-height: 20px;
   }
 
 
@@ -398,6 +442,36 @@ body{
     color: white;
     transition: 0.5s;
     cursor: pointer;
+  }
+  .circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .page2head{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .contentpage2{
+    font-size: 10px;
+    font-weight: 400;
+    width: 80%;
+    text-align: justify;
+    color: grey;
+    letter-spacing: 1.2px;
+    line-height: 16px;
+  }
+  .overline{
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 30px;
   }
 }
 /*Phone Size*/
