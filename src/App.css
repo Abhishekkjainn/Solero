@@ -18,7 +18,7 @@ body{
 .Header{
   width: 100%;
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.153);
+  background-color: rgba(0, 0, 0, 0.253);
   backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
@@ -59,7 +59,7 @@ body{
 }
 .linkdiv{
   font-family: "Bebas Neue";
-  color: rgb(203, 203, 203);
+  color: rgb(234, 234, 234);
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -131,7 +131,7 @@ body{
 .headercarousel{
   font-size: 100px;
   color: white;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 90px;
 }
 .subheadcarousel{
@@ -165,21 +165,18 @@ body{
 /*Page2*/
 
 .page2{
-  background-image: url('/page2back.jpg');
+/* background-image: url('/page2back1.jpg'); */
   background-position: center;
   background-size: cover;
+  background-color: white;
 }
-.page2::after{
+/* .page2::after{
   content: '';
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0;left: 0;right: 0;bottom: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.899);
-  /* background: linear-gradient(rgba(0, 0, 0, 0.555), transparent); */
-}
+  background-color: rgba(255, 255, 255, 0.701);
+} */
 
 /*Page2*/
 
@@ -294,7 +291,7 @@ body{
     display: flex;
   }
   .checkbox{
-    margin-right: 30px;
+    margin-right: 10px;
     scale: 0.7;
   }
   

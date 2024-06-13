@@ -25,8 +25,8 @@ export default function Page1(props) {
   return (
     <div className="page1">
       <Carousel
-        swipeable={false}
-        draggable={false}
+        swipeable={true}
+        draggable={true}
         showDots={false}
         responsive={responsive}
         ssr={true}
