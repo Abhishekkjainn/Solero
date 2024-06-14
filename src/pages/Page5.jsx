@@ -15,7 +15,7 @@ export default function Page5() {
         an elegant rustic charm, and many more options to meet all your decor
         needs.
       </div>
-      <div className="calltag">Call Us At - +91 9301303584</div>
+      <div className="calltag">Call Us At - +91 9512488111</div>
     </div>
   );
 }

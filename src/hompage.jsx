@@ -9,6 +9,10 @@ import CareerPage from './pages/careerpage';
 import ContactsPage from './pages/contactspage';
 import { useState } from 'react';
 import AllPages from './Allpages';
+import Footer from './pages/Footer';
+import FAQPage from './pages/FAQpage';
+import PrivacyPage from './pages/privacypolicypage';
+import TermsPage from './pages/termsPage';
 
 export default function Homepage() {
   return (
@@ -24,7 +28,11 @@ export default function Homepage() {
           <Route path="/contact" element={<ContactsPage />} />
           <Route path="/career" element={<CareerPage />} />
           <Route path="/shop" element={<ShopPage />} />
+          <Route path="/FAQ" element={<FAQPage />} />
+          <Route path="/privacypolicy" element={<PrivacyPage />} />
+          <Route path="/termsandconditions" element={<TermsPage />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
