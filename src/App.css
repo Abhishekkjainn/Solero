@@ -1859,6 +1859,46 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+.line{
+  width: 50%;
+  height: 1px;
+  background-color: #000;
+  margin-top: 30px;
+}
+.companypage6{
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+.valuescontent{
+  width: 80%;
+  margin-top: 30px;
+  font-family: 'Bebas Neue';
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+}
+.trustcardcomp1 {
+  background-image: url('/compcard1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.trustcardcomp2 {
+  background-image: url('/compcard2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.trustcardcomp3 {
+  background-image: url('/compcard3.jpg');
+  background-position: center;
+  background-size: cover;
+}
 
 /*Company Page*/
 
@@ -1942,6 +1982,10 @@ body{
     background-size: cover;
     background-attachment: fixed;
   }
+  .companypage6{
+    margin-bottom: 40px;
+  }
+  
   
 }
 
