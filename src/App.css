@@ -9,6 +9,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: white;
   color: black;
 }
@@ -1694,3 +1695,275 @@ body{
 }
 
 /*Checkbox*/
+
+
+
+/*Company Page*/
+.companypage1{
+  width: 100%;
+  height: 100vh;
+  background-image: url('/companyimage.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.companypage1::after{
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 1;
+}
+.companypageheadingpage1{
+  font-family: 'Bebas Neue';
+  font-weight: 600;
+  font-size: 100px;
+  color: white;
+  letter-spacing: 1.5px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comppagewhitecircle{
+  background-color: white;
+  width: 70px;
+  height: 70px;
+}
+.companypage2{
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.comppage2heading{
+  font-family: 'Bebas Neue';
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.contentcomppage2{
+  width: 80%;
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: 'Bebas Neue';
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.quote{
+  font-size: 24px;
+}
+.companypage3{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parallax{
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+.parallaxcircle{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+}
+.soleroheadingparallax{
+  font-size: 180px;
+  font-family: 'Bebas Neue';
+  color: white;
+  /* -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 2px; */
+  letter-spacing: 3px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;align-items: center;
+  position: absolute;
+}
+.parallax{
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.parallaxcontent{
+  background-color: rgba(0, 0, 0, 0.547);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.companypage4{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brandidimg{
+  width: 100%;
+}
+.brandidhead{
+  font-size: 50px;
+  font-family: 'Bebas Neue';
+}
+.contentbrandid{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.textbrandid{
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  color: #000;
+  font-weight: 100;
+  width: 80%;
+  text-align: justify;
+}
+.imagebrandid{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url('/brandid.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Company Page*/
+
+
+
+@media (max-width: 600px){
+  .companypageheadingpage1{
+    font-family: 'Bebas Neue';
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 1.5px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .comppage2heading{
+    font-size: 33px;
+  }
+  .contentcomppage2{
+    font-size: 15px;
+  }
+  .parallaxcircle{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .soleroheadingparallax{
+    font-size: 100px;
+    font-family: 'Bebas Neue';
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;align-items: center;
+    position: absolute;
+  }
+  .companypage4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .brandidimg{
+    width: 100%;
+  }
+  .brandidhead{
+    font-size: 50px;
+    font-family: 'Bebas Neue';
+  }
+  .contentbrandid{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .textbrandid{
+    font-family: 'Bebas Neue';
+    font-size: 15px;
+    color: #000;
+    font-weight: 100;
+    width: 80%;
+    text-align: justify;
+  }
+  .imagebrandid{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('/brandid.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+}
+
+@media (max-width: 1000px) and (min-width :600px){
+  .companypageheadingpage1{
+    font-family: 'Bebas Neue';
+    font-weight: 600;
+    font-size: 80px;
+    color: white;
+    letter-spacing: 1.5px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textbrandid{
+    font-family: 'Bebas Neue';
+    font-size: 16px;
+    color: #000;
+    font-weight: 100;
+    width: 80%;
+    text-align: justify;
+  }
+}

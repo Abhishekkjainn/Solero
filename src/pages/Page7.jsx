@@ -1,6 +1,6 @@
 export default function Page7() {
   return (
-    <div className="page7 page">
+    <div className="page7">
       <div className="contentpage7">
         <div className="page2head">
           <div className="circle"></div> &nbsp; Get Our Catalogue

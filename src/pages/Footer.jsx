@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 export default function Footer() {
   return (
-    <div className="footer page">
+    <div className="footer">
       <div className="companylogofooter">
         <img src="logoremoved.png" alt="" className="complogofooter" />
         <div className="namefooter">Solero Ceramics Pvt Ltd</div>
