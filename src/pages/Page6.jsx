@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 export default function Page6() {
   return (
     <div className="page6 page">
@@ -27,7 +28,9 @@ export default function Page6() {
           <div className="dimcontent">1600 x 4800 mm</div>
         </div>
       </div>
-      <div className="exploremoredimbutton">Explore Dimensions</div>
+      <Link to={'/products'} className="prodexpbutton">
+        <div className="exploremoredimbutton">Explore Dimensions</div>
+      </Link>
     </div>
   );
 }

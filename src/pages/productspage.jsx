@@ -1,5 +1,6 @@
 import '../App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 export default function ProductsPage() {
   return (
     <div className="productspage">
@@ -10,6 +11,9 @@ export default function ProductsPage() {
   function Prodfinal() {
     return (
       <>
+        <Helmet>
+          <title>Explore Our Products | Solero Ceramics</title>
+        </Helmet>
         <Prodpage1 />
         <Prodpage2 />
         <Prodlastpage />

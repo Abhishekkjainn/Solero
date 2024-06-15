@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 export default function Page2() {
   return (
     <div className="page page2">
@@ -30,6 +31,9 @@ export default function Page2() {
         rigorous quality control. The end result is delight and satisfaction
         among architects, designers, dealers, contractors, and customers alike.
       </div>
+      <Link to={'/company'} className="prodexpbutton">
+        <div className="exploremorebutton">About Solero</div>
+      </Link>
     </div>
   );
 }

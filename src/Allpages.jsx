@@ -6,10 +6,15 @@ import Page5 from './pages/Page5';
 import Page6 from './pages/Page6';
 import Page7 from './pages/Page7';
 import Page8 from './pages/Page8';
+import { Helmet } from 'react-helmet';
 
 export default function AllPages() {
   return (
     <>
+      <Helmet>
+        {' '}
+        <title>Home | Solero Ceramics</title>
+      </Helmet>
       <Page1 />
       <Page2 />
       <Page3 />

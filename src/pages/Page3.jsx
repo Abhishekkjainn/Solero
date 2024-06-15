@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 export default function Page3() {
   return (
     <div className="page page3">
@@ -50,7 +51,10 @@ export default function Page3() {
           </div>
         </div>
       </div>
-      <div className="exploremorebutton">Explore More</div>
+      <Link to={'/products'} className="prodexpbutton">
+        <div className="exploremorebutton">Explore More</div>
+      </Link>
+
       <div className="linepg4"></div>
     </div>
   );

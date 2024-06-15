@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 export default function Page7() {
   return (
     <div className="page7">
@@ -16,7 +17,9 @@ export default function Page7() {
           modern styles, achieve an ultra-designer look with our stunning tile
           collection.
         </div>
-        <div className="exploremoredimbutton">Download Catalogue</div>
+        <Link to={'/downloads'} className="prodexpbutton">
+          <div className="exploremoredimbutton">Download Catalogue</div>
+        </Link>
       </div>
       <div className="imagepage7">
         <img src="3dtiles.png" alt="3d" className="side3dimage" />

@@ -1,10 +1,14 @@
 import '../App.css';
 import { Parallax, Background } from 'react-parallax';
 import Page7 from './Page7';
+import { Helmet } from 'react-helmet';
 
 export default function CompanyPage() {
   return (
     <div className="companypagemain">
+      <Helmet>
+        <title>About Solero Ceramics | Solero Ceramics</title>
+      </Helmet>
       <CompPage1 />
       <CompPage2 />
       <CompPage3 />
