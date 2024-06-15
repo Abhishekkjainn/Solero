@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 export default function Page1(props) {
   const responsive = {
@@ -48,7 +49,9 @@ export default function Page1(props) {
             <div className="subheadcarousel">
               Discover all Solero products for wall, floor and worktops
             </div>
-            <div className="infobutton">Find More Info</div>
+            <Link to={'/products'} className="carouselbutton">
+              <div className="infobutton">Find More Info</div>
+            </Link>
           </div>
         </div>
         <div className="carousel2">
@@ -57,7 +60,9 @@ export default function Page1(props) {
             <div className="subheadcarousel">
               3D texture technology – Red Dot Design Award winner
             </div>
-            <div className="infobutton">Find More Info</div>
+            <Link to={'/products'} className="carouselbutton">
+              <div className="infobutton">Find More Info</div>
+            </Link>
           </div>
         </div>
         <div className="carousel3">
@@ -66,7 +71,9 @@ export default function Page1(props) {
             <div className="subheadcarousel">
               Added values service for your project’s needs
             </div>
-            <div className="infobutton">Find More Info</div>
+            <Link to={'/products'} className="carouselbutton">
+              <div className="infobutton">Find More Info</div>
+            </Link>
           </div>
         </div>
       </Carousel>

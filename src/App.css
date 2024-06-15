@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: "Raleway";
+  overflow-x: hidden;
 }
 .page{
   height: 100vh;
@@ -1987,6 +1988,7 @@ body{
   }
   
   
+  
 }
 
 @media (max-width: 1000px) and (min-width :600px){
@@ -2011,3 +2013,244 @@ body{
     text-align: justify;
   }
 }
+.carouselbutton{
+    text-decoration: none;
+}
+
+/*productspage*/
+.productspage{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.prodpage1{
+  width: 100%;
+  height: 100vh;
+  background-image: url('/productbackground.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.prodpage1::after{
+  content: '';
+  top: 0;right: 0;left: 0;bottom: 0;
+  background-color: rgba(0, 0, 0, 0.555);
+  position: absolute;
+  z-index: 1;
+}
+.propage2{
+  width: 100%;
+  height: auto;
+  padding-bottom:40px ;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.productsection{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.prodback{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* background: linear-gradient(to top , rgba(0, 0, 0, 0.495), transparent); */
+}
+.prodback:hover{
+  scale: 1.15;
+  transition: 0.5s;
+}
+.prodtext{
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  color: white;
+  font-weight: 100;
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+}
+.prodpagename{
+  font-size: 45px;
+  font-family: 'Bebas Neue';
+  color: white;
+  font-weight: 500;
+}
+
+
+
+.productcard {
+  width: 45%;
+  height: 450px;
+  background-color: grey;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative; /* For positioning the overlay */
+}
+
+.productcard::before { /* The gradient overlay */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+  z-index: 1;
+  transition: opacity 0.5s; /* Adding transition for smooth hover effect */
+  opacity: 1; /* Start fully opaque */
+  cursor: pointer;
+}
+
+.prodback {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* Ensure the image is below the overlay */
+  position: relative; /* For z-index to work */
+  transition: transform 0.5s; /* Add transition for the hover effect */
+}
+
+.productcard:hover .prodback {
+  transform: scale(1.15); /* Apply the hover effect */
+  cursor: pointer;
+}
+
+.prodtext {
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  color: white;
+  font-weight: 100;
+  position: absolute;
+  bottom: 40px;
+  left: 25px;
+  z-index: 2; /* Ensure the text is above the overlay */
+}
+
+.prodpagename {
+  font-size: 45px;
+  font-family: 'Bebas Neue';
+  color: white;
+  font-weight: 500;
+  margin-right: 20px;
+}
+.prodlastpage {
+  width: 100%;
+  height: 60vh;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-image: url('/contactimage.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative; /* Needed to position the overlay correctly */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.notfoundheading{
+  font-family: 'Bebas Neue';
+  color: white;
+  font-weight: 500;
+  font-size: 70px;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.notfoundsubhead{
+  font-family: 'Bebas Neue';
+  color: rgb(180, 180, 180);
+  font-weight: 100;
+  font-size: 30px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.contactusbutton{
+  width: 180px;
+  height: 45px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+.contactusbutton:hover{ 
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.prodlastpage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
+  z-index: 1; /* Ensure the overlay is above the background but below any text */
+}
+
+
+
+@media (max-width: 600px){
+  .productcard {
+    width: 90%;
+    height: 350px;
+    background-color: grey;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative; /* For positioning the overlay */
+    margin-bottom: 20px;
+  }
+  .productsection{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .notfoundheading{
+    font-family: 'Bebas Neue';
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
