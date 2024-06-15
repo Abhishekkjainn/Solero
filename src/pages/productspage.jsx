@@ -142,7 +142,7 @@ export default function ProductsPage() {
 
   function Prodtile({ prodtype, prodname, imagesource }) {
     return (
-      <div className="productcard productcard1">
+      <div className="productcardpage productcardpage1">
         <img
           src={imagesource}
           alt="productimage"

@@ -2025,6 +2025,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 .prodpage1{
   width: 100%;
@@ -2036,11 +2037,14 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 
 .prodpage1::after{
   content: '';
+  height: 100vh;
+  width: 100%;
   top: 0;right: 0;left: 0;bottom: 0;
   background-color: rgba(0, 0, 0, 0.555);
   position: absolute;
@@ -2092,7 +2096,7 @@ body{
 
 
 
-.productcard {
+.productcardpage {
   width: 45%;
   height: 450px;
   background-color: grey;
@@ -2101,7 +2105,7 @@ body{
   position: relative; /* For positioning the overlay */
 }
 
-.productcard::before { /* The gradient overlay */
+.productcardpage::before { /* The gradient overlay */
   content: '';
   position: absolute;
   top: 0;
@@ -2124,7 +2128,7 @@ body{
   transition: transform 0.5s; /* Add transition for the hover effect */
 }
 
-.productcard:hover .prodback {
+.productcardpage:hover .prodback {
   transform: scale(1.15); /* Apply the hover effect */
   cursor: pointer;
 }
@@ -2222,7 +2226,7 @@ body{
 
 
 @media (max-width: 600px){
-  .productcard {
+  .productcardpage {
     width: 90%;
     height: 350px;
     background-color: grey;
