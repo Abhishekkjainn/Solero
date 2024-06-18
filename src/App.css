@@ -2432,3 +2432,41 @@ body{
     opacity: 1;
   }
 }
+
+
+
+/*Media Page*/
+.mediapage{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mediapage1{
+  width: 100%;
+  height: 100vh;
+  background-image: url('/galllery.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mediapage1::after{
+  content: '';
+  top: 0;left: 0;bottom: 0;right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.582);
+}
+
+.mediapage2{
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}

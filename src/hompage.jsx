@@ -26,8 +26,7 @@ export default function Homepage() {
           <Route path="/downloads" element={<DownloadsPage />} />
           <Route path="/media" element={<MediaPage />} />
           <Route path="/contact" element={<ContactsPage />} />
-          <Route path="/career" element={<CareerPage />} />
-          <Route path="/shop" element={<ShopPage />} />
+
           <Route path="/FAQ" element={<FAQPage />} />
           <Route path="/privacypolicy" element={<PrivacyPage />} />
           <Route path="/termsandconditions" element={<TermsPage />} />
@@ -70,12 +69,6 @@ export default function Homepage() {
           </Link>
           <Link to="/contact" className="linkdiv">
             Contact
-          </Link>
-          <Link to="/career" className="linkdiv">
-            Career
-          </Link>
-          <Link to="/shop" className="linkdiv">
-            Shop
           </Link>
         </div>
 
@@ -133,20 +126,6 @@ export default function Homepage() {
                   onClick={hideMenu}
                 >
                   Contact
-                </Link>
-                <Link
-                  to="/career"
-                  className="linkdivresponsive"
-                  onClick={hideMenu}
-                >
-                  Career
-                </Link>
-                <Link
-                  to="/shop"
-                  className="linkdivresponsive"
-                  onClick={hideMenu}
-                >
-                  Shop
                 </Link>
               </div>
             </div>
